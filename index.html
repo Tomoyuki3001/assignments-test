@@ -3,23 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style/style.css" />
+    <link rel="stylesheet" href="./Style/top.css" />
+    <link rel="stylesheet" href="./Style/line.css" />
+    <link rel="stylesheet" href="./Style/policy.css" />
+    <link rel="stylesheet" href="./Style/missiona.css" />
     <title>Demo website</title>
   </head>
   <body>
+    <header class="header">
+      <img src="./Images/header_logo.png" alt="Image" />
+      <button class="header_btn">まずはLINE追加して詳細を見る</button>
+    </header>
     <div class="body">
       <!-- Top part -->
       <div class="top">
         <div class="top_header">
-          <p class="top_header_p1">LINEで事業の自動かを牽引するミショナが</p>
+          <p class="top_header_p1">LINEで事業の自動化を牽引するミショナが</p>
           <p class="top_header_p2">これまでのスキルを活かして</p>
           <p class="top_header_p3">新たなキャリアに</p>
           <p class="top_header_p3">挑戦する方を</p>
           <p class="top_header_p3">積極採用中</p>
         </div>
-        <div class="top_logos">
-          <img src="./Images/header_image_1.png" alt="Image" />
-          <img src="./Images/header_image_2.png" alt="Image" />
-          <img src="./Images/header_image_3.png" alt="Image" />
+        <div class="top_left">
+          <div class="top_logos">
+            <img src="./Images/header_image_1.png" alt="Image" />
+            <img src="./Images/header_image_2.png" alt="Image" />
+            <img src="./Images/header_image_3.png" alt="Image" />
+          </div>
+        </div>
+        <div class="top_right">
+          <img class="" src="./Images/top_img.png" alt="Image" />
         </div>
       </div>
 
@@ -28,36 +42,48 @@
         <div class="line_sentence">
           <p>\ 詳しく知りたいという方へ /</p>
         </div>
-        <button>LINEで情報を受け取る <span>></span></button>
+        <button class="line_btn">LINEで情報を受け取る</button>
       </div>
 
       <!-- Policy part -->
       <div class="policy">
         <div class="policy_1">
-          <div class="policy_1_header">
-            <p>誰もが活躍出来る会社を目指して</p>
+          <div class="policy_1_sentences">
+            <p class="policy_1_header">誰もが活躍出来る会社を目指して</p>
             <p>
               バックグラウンドを問わず意欲あるスタッフが活躍できる環境づくりに取り組んでいます。
             </p>
           </div>
           <div class="policy_1_images">
             <div class="policy_1_image">
+              <img
+                class="policy_image"
+                src="./Images/policy_img_1.png"
+                alt="Image"
+              />
               <p>
                 厚生労働省が推進するテレワーク普及推進運動に参画しています。
               </p>
-              <img src="./Images/policy_img_1.png" alt="Image" />
             </div>
             <div class="policy_1_image">
+              <img
+                class="policy_image"
+                src="./Images/policy_img_2.png"
+                alt="Image"
+              />
               <p>
                 内閣府が推進する地方移住や、ワークライフバランスの活性化運動に取り組んでいます。
               </p>
-              <img src="./Images/policy_img_2.png" alt="Image" />
             </div>
             <div class="policy_1_image">
+              <img
+                class="policy_image"
+                src="./Images/policy_img_3.png"
+                alt="Image"
+              />
               <p>
                 安心・安全なIT社会を実現するために、セキュリティ対策アクション二つ星を宣言しました。
               </p>
-              <img src="./Images/policy_img_3.png" alt="Image" />
             </div>
           </div>
         </div>
@@ -67,16 +93,26 @@
             <p>第一に考えています</p>
           </div>
           <div class="policy_2_sentences">
-            <p>ミショナでは勤務時間の長さや時間帯に制約はありません。</p>
-            <p>休日も自分で決める事ができます。</p>
-            <li>子供の体調不良や介護、ご自身の都合による急なお休み</li>
-            <li>他の仕事や趣味など、ご自身の希望に合わせた出勤</li>
-            <li>休職・復職制度も充実</li>
-            <li>妊娠中のお休み、出産後に活躍されている方など多数在籍</li>
-            <p>あなたらしい働き方を全力でサポートします</p>
-          </div>
-          <div class="policy_2_image">
-            <img src="./Images/policy_img_4.png" alt="Image" />
+            <div class="policy_2_sentence">
+              <p>ミショナでは勤務時間の長さや時間帯に制約はありません。</p>
+              <p>休日も自分で決める事ができます。</p>
+              <li class="policy_2_list">
+                子供の体調不良や介護、ご自身の都合による急なお休み
+              </li>
+              <li>他の仕事や趣味など、ご自身の希望に合わせた出勤</li>
+              <li>休職・復職制度も充実</li>
+              <li>妊娠中のお休み、出産後に活躍されている方など多数在籍</li>
+              <p class="policy_2_sentence_red">
+                あなたらしい働き方を全力でサポートします
+              </p>
+            </div>
+            <div class="policy_2_image">
+              <img
+                class="policy2_image"
+                src="./Images/policy_img_4.png"
+                alt="Image"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -87,19 +123,23 @@
           <img src="./Images/missiona_img.png" alt="Image" />
         </div>
         <div class="missiona_sentence">
-          <p>ミショナとは？</p>
-          <p>より自由で、楽しい社会を</p>
+          <p class="missiona_header">ミショナとは？</p>
+          <p class="missiona_header_2">より自由で、楽しい社会を</p>
+          <br />
           <p>
             ミショナは「可能性の発掘と価値提供を通して、より自分らしく、生き生きとした社会を実現する」をビジョンとして掲げてきます。
           </p>
+          <br />
           <p>
             その手段の1つとしてLINE公式アカウントの自動化ツール「L Message」
             を開発し、企業や店舗様への導入支援や事業課題の解決をサポートしています。
           </p>
+          <br />
           <p>
             LINEは誰もが使っているサービスですが、ビジネスへの活用はまだー
             般的ではありません。もっと大勢の人に知ってほしい魅力的な店舗や企業様を世の中に伝えることができる大きな可能性を秘めている媒体にも関わらず、そのノウハウを熟知したプレイヤーが不足しているのが現状です。
           </p>
+          <br />
           <p>
             私たちは L Message
             の提供を通じてビジョンの実現を目指しています。この想いに共感し、共に活動いただける皆様とお会いできることを楽しみにしています。
